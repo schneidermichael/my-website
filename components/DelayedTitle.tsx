@@ -15,7 +15,7 @@ const DelayedTitle: FC<DelayedTitleProps> = ({ speed, firstMessage, secondMessag
       });
   
       return (
-        <div>
+        <div className="dark:text-white">
           {firstTextPart}{" "}
           <span className="text-blue-600">{secondTextPart.substring(0, idx)}</span>
         </div>
