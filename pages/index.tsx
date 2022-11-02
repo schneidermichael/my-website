@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       <Head >
         <title>Michael Schneider</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Linkedin and Github links from Michael Schneider"></meta>
       </Head>
       <div className="min-h-screen mx-auto max-w-6xl flex flex-col ">
         <Header/>
