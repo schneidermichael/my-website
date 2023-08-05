@@ -12,10 +12,9 @@ cd out
 # place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
 
-echo 'michaelschneider.live' > CNAME
-
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
+echo 'michaelschneider.live' > CNAME
 
 git init
 git checkout -B main
