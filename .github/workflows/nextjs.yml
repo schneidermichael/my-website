@@ -57,13 +57,13 @@ jobs:
         run: npx next build
 
       - name: Show directory
-        working-directory: ../
+        working-directory: ./
         run: |
           ls -la
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: ./dist
 
   # Deployment job
   deploy:
