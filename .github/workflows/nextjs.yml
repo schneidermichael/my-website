@@ -55,6 +55,11 @@ jobs:
           static_site_generator: next
       - name: Build with Next.js
         run: npx next build
+
+      - name: Open Web Client Directory
+        working-directory: ./
+        run: |
+          ls -la
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
