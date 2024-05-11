@@ -56,14 +56,14 @@ jobs:
       - name: Build with Next.js
         run: npx next build
 
-      - name: Open Web Client Directory
-        working-directory: ./
+      - name: Show directory
+        working-directory: ../
         run: |
           ls -la
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./
 
   # Deployment job
   deploy:
