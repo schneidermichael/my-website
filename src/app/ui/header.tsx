@@ -20,6 +20,7 @@ const Header = () => {
               height={500}
               alt="Picture of the author"
               priority={true}
+              className="h-auto w-auto"
             />
           </div>
           <div className="space-x-8">
