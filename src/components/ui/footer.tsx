@@ -7,7 +7,7 @@ interface FooterProps {
 export const Footer: FC<FooterProps> = ({ name }) => {
   return (
     <footer className="flex h-14 border-t">
-      <span className="flex gap-2 items-center text-black">
+      <span className="flex gap-2 items-center dark:text-white">
         © {name} | 2022 - today
       </span>
     </footer>
