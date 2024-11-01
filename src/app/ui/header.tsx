@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo from "../../../public/brand.png";
 
 const Header = () => {
   const pathname = usePathname();
@@ -14,7 +15,7 @@ const Header = () => {
           <div>
             <Image
               style={{ display: "inline" }}
-              src="/brand.png"
+              src={logo}
               width={200}
               height={500}
               alt="Picture of the author"
