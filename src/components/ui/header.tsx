@@ -32,7 +32,7 @@ const Header = () => {
                 src={lightLogo}
                 width={200}
                 height={500}
-                alt="Picture of the author"
+                alt="Picture of the logo"
                 priority={true}
                 className="h-auto w-auto"
               />
@@ -42,7 +42,7 @@ const Header = () => {
                 src={darkLogo}
                 width={200}
                 height={500}
-                alt="Picture of the author"
+                alt="Picture of the logo"
                 priority={true}
                 className="h-auto w-auto"
               />
@@ -71,6 +71,14 @@ const Header = () => {
               href="/insights"
             >
               Insights
+            </Link>
+            <Link
+              className={`uppercase link ${
+                pathname === "/what-i-do" ? "active" : ""
+              }`}
+              href="/contact"
+            >
+              Contact
             </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
